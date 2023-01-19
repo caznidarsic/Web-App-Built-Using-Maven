@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* Setting up things like the default font size, line height, and font */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gainsboro;
+}
+
+header {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    /* float to center */
+    margin: 5px auto 10px; 
+    padding: 10px;
+    background-color: white;
+    /* give it a shadow */
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,.25);
+    -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,.25);
+}
+
+div {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul {
+    /* Not sure why this is a thing but it is */
+    list-style-position: inside;
+}
+
+/* From Bootstrap Alerts */
+.error-alert {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+
+.success-alert {
+	color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert {
+	position: relative;
+	width: 100%;
+	max-width: 750px;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+.para-img {
+    margin: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.img-right {
+    float: right;
+}
+
+.img-left {
+    float: left;
+}
+
+.break {
+    display: block;
+}
+
+.break-img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto 10px;
+    width: 80%;
+    min-width: 400px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+thead, tfoot {
+    border: 1px solid black;
+}
+
+tr {
+    text-align: center;
+}
+
+/* only certain borders */
+td:first-child, th:first-child {
+    border-right: 1px solid black;
+}
